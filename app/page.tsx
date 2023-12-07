@@ -82,6 +82,8 @@ export default function Home() {
               {
                 log.map((item, i) => {
                   return <Box
+
+                  key = {i}
                     display={"flex"}
                     flex={"row"}
                   >
