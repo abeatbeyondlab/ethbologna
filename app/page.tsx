@@ -11,6 +11,10 @@ export default function Home() {
 
   const log = [
      {
+       "date":"25/01/2024",
+       "event":"Second meetup!! Next monday at 18:00 at Funtanir Bistrò Cocktail & Rooms Bologna47a Via Riva di Reno, Bologna, Emilia-Romagna, 40122. Check on Telegram for more details."
+     },
+     {
        "date":"18/12/2023",
        "event":"First meetup!! Next monday at 19:00 at Cluricaune Irish Pub , 18b Via Zamboni 40126 Bologna. Check on telegram for more details."
      },
