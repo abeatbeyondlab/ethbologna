@@ -12,7 +12,7 @@ export default function Home() {
   const log = [
      {
        "date":"25/01/2024",
-       "event":"Second meetup!! Next monday at 18:00 at Funtanir Bistrò Cocktail & Rooms Bologna47a Via Riva di Reno, Bologna, Emilia-Romagna, 40122. Check on Telegram for more details."
+       "event":"Second meetup!! At 18:00 at Funtanir Bistrò Cocktail & Rooms Bologna 47a Via Riva di Reno, Bologna, Emilia-Romagna, 40122. Check on Telegram for more details."
      },
      {
        "date":"18/12/2023",
