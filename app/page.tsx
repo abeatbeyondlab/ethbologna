@@ -10,6 +10,10 @@ export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode()
 
   const log = [
+{
+"date":"12/03/2024",
+"event":"Third meetup!! At 19:00 at Huhcocktail at Piazza San Francesco 10g 40122 Bologna"
+},
      {
        "date":"25/01/2024",
        "event":"Second meetup!! At 18:00 at Funtanir Bistrò Cocktail & Rooms Bologna 47a Via Riva di Reno, Bologna, Emilia-Romagna, 40122. Check on Telegram for more details."
