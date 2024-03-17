@@ -5,26 +5,36 @@ import { Button, Box, Center, Container, Heading, Image, Img, Link, Text, useCol
 import { IconButton } from '@chakra-ui/react'
 import { SlSocialGithub } from "react-icons/sl";
 import { FaTelegramPlane } from "react-icons/fa";
+import { ExternalLinkIcon } from '@chakra-ui/icons'
 export default function Home() {
 
   const { colorMode, toggleColorMode } = useColorMode()
 
   const log = [
-{
-"date":"12/03/2024",
-"event":"Third meetup!! At 19:00 at Huhcocktail at Piazza San Francesco 10g 40122 Bologna"
-},
+    {
+      "date":"18/04/2024",
+      "event":"Fourth meetup!! At 19:00 at Funtanir Bistrò Cocktail & Rooms Bologna 47a Via Riva di Reno, Bologna, Emilia-Romagna, 40122.",
+      "link":"https://www.eventbrite.com/e/biglietti-ethbologna-4-865075182157?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl"
+    },
+    {
+      "date":"12/03/2024",
+      "event":"Third meetup!! At 19:00 at Huhcocktail at Piazza San Francesco 10g 40122 Bologna",
+      "link":null
+    },
      {
        "date":"25/01/2024",
-       "event":"Second meetup!! At 18:00 at Funtanir Bistrò Cocktail & Rooms Bologna 47a Via Riva di Reno, Bologna, Emilia-Romagna, 40122. Check on Telegram for more details."
+       "event":"Second meetup!! At 18:00 at Funtanir Bistrò Cocktail & Rooms Bologna 47a Via Riva di Reno, Bologna, Emilia-Romagna, 40122. Check on Telegram for more details.",
+       "link":null
      },
      {
        "date":"18/12/2023",
-       "event":"First meetup!! Next monday at 19:00 at Cluricaune Irish Pub , 18b Via Zamboni 40126 Bologna. Check on telegram for more details."
+       "event":"First meetup!! Next monday at 19:00 at Cluricaune Irish Pub , 18b Via Zamboni 40126 Bologna. Check on telegram for more details.",
+       "link":null
      },
     {
       "date": "07/12/2023",
-      "event": 'Meetups coming very soon. '
+      "event": 'Meetups coming very soon. ',
+      "link":null
     }
   ]
 
@@ -114,6 +124,14 @@ export default function Home() {
                     >
                       {item.event}
                     </Text>
+                    {
+                      item.link ?
+                    <Link href={item.link} isExternal>
+                      <ExternalLinkIcon mx='2px' />
+                    </Link>
+                          :
+                          null
+                    }
                   </Box>
                 })
               }
